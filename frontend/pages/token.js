@@ -20,7 +20,6 @@ export default function Token() {
       router.push("/mint");
     }
   }, [tokenId]);
-
   return (
     <div
       css={{

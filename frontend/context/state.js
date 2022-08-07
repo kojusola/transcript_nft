@@ -10,6 +10,7 @@ export function AppWrapper({ children }) {
   const [metamaskPresent, setMetamaskPresent] = useState(true);
   const [tokenId, setTokenId] = useState();
   const [loading, setLoading] = useState(false);
+  const [ipfsCid, setIpfsCid] = useState();
 
   let sharedState = {
     connected,
@@ -24,6 +25,8 @@ export function AppWrapper({ children }) {
     setTokenId,
     loading,
     setLoading,
+    ipfsCid,
+    setIpfsCid,
   };
 
   return (
